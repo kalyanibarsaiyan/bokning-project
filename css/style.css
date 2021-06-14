@@ -1,0 +1,130 @@
+body {
+	margin: 0;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+}
+a:hover {
+	text-decoration: none;
+}
+/* default css */
+
+h3 {
+	font-size: 40px;
+}
+h1 {
+	font-size: 48px;
+}
+h5 {
+	font-size: 31px;
+}
+.text-primary {
+	color: #08C18A !important;
+}
+.text-alternative {
+	color: #186AA5 !important;
+}
+.text-secondary {
+	color: #000 !important;
+}
+.theme-color {
+	background-color: #08C18A;
+}
+.font-semibold {
+	font-weight: 500;
+}
+/* default css end */
+
+/* landing page css */
+
+header {
+	z-index: 9;
+}
+header .nav-link {
+	font-size: 16px;
+}
+.submenu-header {
+	width: 300px;
+}
+.banner_section {
+	padding-top: 100px;
+}
+.banner_section button{
+	min-width: 200px;
+}
+.book_demo {
+	border: 1px solid #186AA5;
+	color: #186AA5;
+	border-radius: 0;
+}
+.video_section {
+	height: 500px;
+}
+.whyus_content {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;  
+	overflow: hidden;
+}
+
+.testimonial-content {
+	margin-left: -100px;
+}
+.testimonial-content h5 {
+	font-size: 24px;
+	line-height: 60px;
+	font-style: italic;
+}
+.testimonial-content h6 {
+	font-size: 28px;
+}
+.carousel-indicators li {
+	width: 18px;
+	height: 18px;
+	border: 1px solid #707070;
+	border-radius: 50%;
+}
+.carousel-indicators {
+	bottom: -40px;
+	z-index: 0;
+}
+.carousel-indicators .active {
+	background-color: #E8EFF7;
+	border: 1px solid #E8EFF7;
+}
+.about-content {
+	width: 75%;
+}
+footer {
+	border-top: 3px solid #32dba0;
+}
+.back-to-top {
+	position: fixed;
+    right: 0;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    box-shadow: 0px 0px 5px #32dba0;
+    bottom: 50px;
+    z-index: 9;
+}
+
+@media(max-width: 1024px) {
+
+	.about-content {
+		width: 80%;
+	}
+}
+@media(max-width: 991px) {
+	h3 {
+	    font-size: 32px;
+	}
+	.testimonial-content {
+		margin-left: 0;
+	}
+	
+	/*.banner_section {
+	    padding-top: 50px;
+	}*/
+}
