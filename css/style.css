@@ -133,7 +133,7 @@ header .nav-link {
 .integration-card {
 	transition: ease all 0.4s;
 }
-.integration-card:hover {
+.integration-card:hover, .more_products ul li:hover {
 	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 .card-first {
@@ -157,7 +157,7 @@ header .nav-link {
 	object-fit: cover;
 }
 .more_products ul li {
-	background-color: red;
+	transition: ease all 0.4s;
 }
 
 @media(max-width: 1024px) {
