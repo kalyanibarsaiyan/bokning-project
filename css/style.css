@@ -143,6 +143,34 @@ header .nav-link {
 	border-left: 3px solid #d70048;
 }
 
+/* Text Slider */
+  .slider{
+	height: 50px;
+	overflow: hidden;
+  }
+  .slider div {
+	height: 50px;
+	margin-bottom: 50px;
+  }
+  .slider-text1 {
+	animation: slide 7s linear infinite;
+  }
+  .slider-text2 {
+	color: grey;
+  }
+  .slider-text3 {
+	color: #D0858B;
+  }
+  @keyframes slide {
+	0% {margin-top:-300px;}
+	5% {margin-top:-200px;}
+	33% {margin-top:-200px;}
+	38% {margin-top:-100px;}
+	66% {margin-top:-100px;}
+	71% {margin-top:0px;}
+	100% {margin-top:0px;}
+  }
+
 
 /* product page css */
 
