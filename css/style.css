@@ -57,7 +57,13 @@ header .nav-link {
 	padding-top: 100px;
 }
 .banner_section button{
-	min-width: 200px;
+	transition: ease all 0.4s;
+	border-radius: 20px;
+}
+.banner_section button:hover {
+	-webkit-transform: scale(1.05) translateZ(0);
+	-moz-transform: scale(1.05) translateZ(0);
+	transform: scale(1.05) translateZ(0);
 }
 .book_demo {
 	border: 1px solid #186AA5;
@@ -78,12 +84,19 @@ header .nav-link {
 	width: 75%;
 	margin: 0 auto;
 }
-
+.why-content {
+	transition: ease all 0.4s;
+}
+.why-content:hover {
+	-webkit-transform: scale(1.05) translateZ(0);
+	-moz-transform: scale(1.05) translateZ(0);
+	transform: scale(1.05) translateZ(0);
+}
 .testimonial-content {
 	margin-left: -100px;
 }
 .testimonial-content h5 {
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 60px;
 	font-style: italic;
 }
@@ -109,6 +122,12 @@ header .nav-link {
 }
 .integration-card .integration-icon {
 	height: 150px;
+}
+.integration-card {
+	transition: ease all 0.4s;
+}
+.integration-card:hover {
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
 .card-first {
 	border-left: 3px solid #46ac35;
