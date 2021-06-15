@@ -29,6 +29,18 @@ h1 {
 .font-semibold {
 	font-weight: 500;
 }
+.br-10 {
+	border-radius: 10px;
+}
+
+button.btn {
+	transition: ease all 0.4s;
+}
+button:hover {
+	-webkit-transform: scale(1.05) translateZ(0);
+	-moz-transform: scale(1.05) translateZ(0);
+	transform: scale(1.05) translateZ(0);
+}
 /* default css end */
 
 /* landing page css */
@@ -56,15 +68,10 @@ header .nav-link {
 .banner_section {
 	padding-top: 100px;
 }
-.banner_section button{
-	transition: ease all 0.4s;
+/*.banner_section button{
 	border-radius: 20px;
-}
-.banner_section button:hover {
-	-webkit-transform: scale(1.05) translateZ(0);
-	-moz-transform: scale(1.05) translateZ(0);
-	transform: scale(1.05) translateZ(0);
-}
+}*/
+
 .book_demo {
 	border: 1px solid #186AA5;
 	color: #186AA5;
@@ -136,6 +143,22 @@ header .nav-link {
 	border-left: 3px solid #d70048;
 }
 
+
+/* product page css */
+
+.inner-product-section .inner-product-content {
+	margin-top: -100px;
+	border-radius: 10px;
+}
+.product_img {
+	height: 300px;
+}
+.product_img img{
+	object-fit: cover;
+}
+.more_products ul li {
+	background-color: red;
+}
 
 @media(max-width: 1024px) {
 
