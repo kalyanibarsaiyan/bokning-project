@@ -14,6 +14,9 @@ h3 {
 h1 {
 	font-size: 48px;
 }
+.font-sm {
+	font-size: 14px;
+}
 .text-primary {
 	color: #08C18A !important;
 }
@@ -40,6 +43,13 @@ button:hover {
 	-webkit-transform: scale(1.05) translateZ(0);
 	-moz-transform: scale(1.05) translateZ(0);
 	transform: scale(1.05) translateZ(0);
+}
+.form-control {
+	background-color: transparent;
+}
+.form-control:focus {
+	background-color: transparent;
+	box-shadow: none;
 }
 /* default css end */
 
@@ -188,6 +198,23 @@ header .nav-link {
 	transition: ease all 0.4s;
 }
 
+/* pricing page css */
+
+.plan-features ul li img {
+	position: absolute;
+	left: 0;
+	top: 5px;
+}
+.price-card {
+	max-width: 500px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	width: 400px;
+}
+.signup-form {
+	max-width: 400px;
+}
+
 @media(max-width: 1024px) {
 
 	.about-content {
@@ -205,4 +232,9 @@ header .nav-link {
 	/*.banner_section {
 	    padding-top: 50px;
 	}*/
+}
+@media(max-width: 767px) {
+	.price-card  {
+		width: auto;
+	}
 }
