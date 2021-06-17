@@ -219,6 +219,12 @@ header .nav-link {
 	max-width: 400px;
 }
 
+/* contact page */
+
+textarea {
+	resize: none;
+}
+
 @media(max-width: 1024px) {
 
 	.about-content {
