@@ -4,52 +4,55 @@
 	<title>Contact Page</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="icon" href="images/favicon.ico" type="images/ico" sizes="16x16">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="position-fixed bg-white shadow-sm w-100 px-md-5 py-2">
+	<header class="position-fixed bg-white shadow-sm w-100 px-lg-5 py-2">
 		<nav class="navbar navbar-expand-lg navbar-light">
 		  <a class="navbar-brand" href="#">
 		  	<img src="images/bos-logo.png" width="150px">
 		  </a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
+		  <button class="navbar-toggler position-relative" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span></span>
+		    <span></span>
+		    <span></span>
 		  </button>
 
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mx-md-auto">
-		      <li class="nav-item dropdown mr-4">
-		        <a class="nav-link text-secondary" href="#" id="navbarDropdown" role="button">
-		          How it works<i class="fa fa-angle-down ml-3"></i>
-		        </a>
-		        <div class="dropdown-menu-right border-0 shadow-sm submenu-header" aria-labelledby="navbarDropdown">
-		        	<div class="d-flex align-items-center justify-content-around">
-		        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
-		        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
-		        	</div>
-		        	<div class="d-flex align-items-center justify-content-around">
-		        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
-		        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
-		        	</div>
-		        	<div class="d-flex align-items-center justify-content-around">
-		        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
-		        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
-		        	</div>
-		        </div>
+		        <li class="nav-item dropdown mr-0 mr-md-4">
+	              	<a class="nav-link dropdown-toggle text-secondary d-lg-block d-flex align-items-center justify-content-between pt-4 py-lg-2" href="product.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" 	aria-expanded="false">
+	                	Hur fungerar det?<i class="fa fa-angle-down ml-3"></i>
+	              	</a>
+	              	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		                <div class="d-lg-flex align-items-center justify-content-around">
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
+			        	</div>
+			        	<div class="d-lg-flex align-items-center justify-content-around">
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
+			        	</div>
+			        	<div class="d-lg-flex align-items-center justify-content-around">
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/apoinment.png" title="img" width="20px" class="mr-2">Action</a></div>
+			        	</div>
+	              	</div>
+		        </li>
+		      <li class="nav-item active mr-0 mr-md-4">
+		        <a class="nav-link text-secondary py-4 py-lg-2" href="pricing.html">Pris</a>
 		      </li>
-		      <li class="nav-item active mr-4">
-		        <a class="nav-link text-secondary" href="#">Price</a>
-		      </li>
-		      <li class="nav-item mr-4">
-		        <a class="nav-link text-secondary" href="#">Contact us</a>
+		      <li class="nav-item mr-0 mr-md-4">
+		        <a class="nav-link text-secondary pb-4 py-lg-2" href="contact.html">Kontakta oss</a>
 		      </li>
 		    </ul>
-		    <div class="login-user d-md-flex align-items-center">
-		    	<button class="btn btn-default text-capitalize py-2 book_demo mb-3 mb-md-0 rounded-pill">Book a Demo</button>
-		    	<a href="#" title="login" class="text-primary nav-link"><i class="fa fa-user text-primary mr-2" aria-hidden="true"></i>Login</a>
+		    <div class="login-user d-lg-flex align-items-center flex-row-reverse">
+		    	<a href="https://app3.bokningoschema.se/#/login" title="login" class="text-primary nav-link px-0 px-md-3 text-center text-lg-left"><i class="fa fa-user text-primary mr-2" aria-hidden="true"></i>Login</a>
+		    	<a href="https://app3.bokningoschema.se/#/register" class="btn btn-default text-capitalize py-2 book_demo font-weight-bold mb-3 mb-md-0 rounded-pill px-4">Boka Demo</a>
 		    </div>
 		  </div>
 		</nav>
@@ -63,7 +66,7 @@
 					<form class="mx-auto signup-form mt-5">
 						<div class="form-group d-flex border p-1 rounded-pill">
 							<input type="text" name="email" class="form-control border-0" placeholder="Enter Your Email">
-							<button class="btn theme-color rounded-pill text-white px-4 py-2 text-nowrap">Sign Up</button>
+							<button onclick="location.href='https://app3.bokningoschema.se/#/register'" type="button" class="btn theme-color rounded-pill text-white px-4 py-2 text-nowrap">Sign Up</button>
 						</div>
 					</form>
 				</div>
@@ -134,20 +137,20 @@
 		<div class="container text-center py-5 bg-light shadow-sm br-10">
 			<h3 class="mb-5 font-weight-bold text-primary text-center">Book Your Demo</h3>
 			<h5 class="mb-5 w-75 mx-auto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h5>
-			<button class="btn btn-default text-capitalize shadow mr-3 bg-white text-primary py-2 px-4 font-weight-bold mb-3 mb-md-0 rounded-pill">Book A Demo</button>
+			<button onclick="location.href='https://app3.bokningoschema.se/#/register'" type="button" class="btn btn-default text-capitalize shadow mr-3 bg-white text-primary py-2 px-4 font-weight-bold mb-3 mb-md-0 rounded-pill">Book A Demo</button>
 		</div>
 	</section>
 	<footer class="p-md-5 position-relative theme-color text-white">
 		<div class="row mx-0 py-lg-5 py-3">
 			<div class="col-md-3 col-12 text-center mb-5 mb-md-0 d-flex align-items-center justify-content-between flex-column">
-				<a href="#" title="logo">
+				<a href="javascript:void(0)" title="logo">
 					<img src="images/footer-logo.png" width="50%">
 					<ul class="pl-0 list-unstyled mb-0 text-md-left text-center py-4">
 						<li>
-							<a href="#" title="terms" class="text-white">Terms of use for mobile</a>
+							<a href="privacy_policy.html" title="terms" class="text-white">Terms of use for mobile</a>
 						</li>
 						<li>
-							<a href="#" title="cookie" class="text-white">Cookies</a>
+							<a href="cookies.html" title="cookie" class="text-white">Cookies</a>
 						</li>
 					</ul>
 				</a>
@@ -174,16 +177,16 @@
 						<h6 class="font-weight-bold mb-3">All sides</h6>
 						<ul class="pl-0 list-unstyled mb-0">
 							<li class="pb-2">
-								<a href="#" title="home" class="text-white">Home</a>
+								<a href="index.html" title="home" class="text-white">Home</a>
 							</li>
 							<li class="pb-2">
-								<a href="#" title="product" class="text-white">Product</a>
+								<a href="product.html" title="product" class="text-white">Product</a>
 							</li>
 							<li class="pb-2">
-								<a href="#" title="price" class="text-white">Price</a>
+								<a href="pricr.html" title="price" class="text-white">Price</a>
 							</li>
 							<li class="pb-2">
-								<a href="#" title="contact" class="text-white">Contact Us</a>
+								<a href="contact.html" title="contact" class="text-white">Contact Us</a>
 							</li>
 						</ul>
 					</div>
@@ -199,16 +202,16 @@
 						<h6 class="font-weight-bold mb-3">App and integration</h6>
 						<ul class="pl-0 list-unstyled mb-0">
 							<li class="pb-2">
-								<a href="#" title="iOS" class="text-white">iOS App</a>
+								<a href="https://apps.apple.com/se/app/bokning-schema-online/id1225449368" title="iOS" class="text-white">iOS App</a>
 							</li>
 							<li class="pb-2">
-								<a href="#" title="android" class="text-white">Android App</a>
+								<a href="https://play.google.com/store/apps/details?id=com.birdvision.bos" title="android" class="text-white">Android App</a>
 							</li>
 							<li class="pb-2">
-								<a href="#" title="fortnox" class="text-white">Fortnox</a>
+								<a href="fortnox.html" title="fortnox" class="text-white">Fortnox</a>
 							</li>
 							<li class="pb-2">
-								<a href="#" title="lorem" class="text-white">Lorem Ipsum</a>
+								<a href="https://vismaspcs.se/produkter/bokforingsprogram/visma-eekonomi" title="lorem" class="text-white">Visma</a>
 							</li>
 						</ul>
 					</div>

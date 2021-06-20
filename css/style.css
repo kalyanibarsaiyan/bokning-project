@@ -7,6 +7,10 @@ body {
 a:hover {
 	text-decoration: none;
 }
+.btn.focus, .btn:focus , .btn:hover{
+	box-shadow: none;
+	text-decoration: none;
+}
 /* default css */
 
 h3 {
@@ -75,16 +79,13 @@ header .nav-link {
 .nav-item:hover .submenu-header {
 	opacity: 1;
 }
-.nav-item:hover .fa-angle-down {
-	transform: rotate(180deg);
-	color: #08C18A;
-}
+
 .banner_section {
 	padding-top: 100px;
 }
-/*.banner_section button{
-	border-radius: 20px;
-}*/
+.dropdown-toggle::after {
+	display: none;
+}
 
 .book_demo {
 	border: 1px solid #186AA5;
@@ -219,17 +220,150 @@ header .nav-link {
 	max-width: 400px;
 }
 
+/* humburger css */
+.navbar-toggler {
+	border: none;
+	top: -9px;
+}
+.navbar-toggler span {
+	    width: 20px;
+	    height: 5px;
+	    background: #08c18a;
+	    display: block;
+	    position: absolute;
+	    height: 3px;
+	    width: 100%;
+	    border-radius: 9px;
+	    opacity: 1;
+	    left: 0;
+	    -webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	    -webkit-transition: .25s ease-in-out;
+	    -moz-transition: .25s ease-in-out;
+	    -o-transition: .25s ease-in-out;
+	    transition: .25s ease-in-out;
+}
+.navbar-toggler span:nth-child(1) {
+	top: 0px;
+}
+
+.navbar-toggler span:nth-child(2) {
+	top: 10px;
+}
+
+.navbar-toggler span:nth-child(3) {
+	top: 20px;
+}
+.navbar-toggler[aria-expanded="true"] span:nth-child(2){
+	display: none;
+}
+.navbar-toggler[aria-expanded="true"] span:nth-child(1) {
+	transform: rotate(45deg);
+	top: 10px;
+}
+ .navbar-toggler[aria-expanded="true"] span:nth-child(3) {
+ 	transform: rotate(-45deg);
+ 	top: 10px;
+ }
+
+
 /* contact page */
 
 textarea {
 	resize: none;
 }
 
+/* cookies page css */
+
+.accordion .btn-link[aria-expanded="true"] i {
+	transform: rotate(180deg);
+	color: #08C18A;
+}
+.accordion .btn-link i{
+	font-size: 20px;
+}
+
+/* fortnox page css */
+
+.fortnox-pros .card_img {
+	max-height: 300px;
+	height: 300px;
+}
+.fortnox-pros .card_img img {
+	height: 100%;
+	object-fit: contain;
+}
+.fortnox-pros .card-title {
+	height: 40px;
+}
+
+
 @media(max-width: 1024px) {
 
 	.about-content {
 		width: 80%;
 	}
+}
+@media (min-width: 991px) {
+	.nav-item.dropdown:hover .dropdown-menu {
+		display: block !important;
+	}
+	.dropdown.nav-item:hover .fa-angle-down {
+		transform: rotate(180deg);
+		color: #08C18A;
+	}
+}
+@media (max-width: 990px) {
+	.navbar .dropdown-menu {
+		border: 0;
+	}
+	.navbar-brand img {
+		width: 200px;
+	}
+	.dropdown.show .fa-angle-down {
+	    transform: rotate(180deg);
+	    color: #08C18A;
+	}
+    .navbar-collapse {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+    }
+
+    .navbar-collapse.collapsing {
+        left: -75%;
+        transition: height 0s ease;
+    }
+
+    .navbar-collapse.show {
+        left: 0;
+        transition: left 200ms ease-in-out;
+    }
+
+    .navbar-toggler.collapsed ~ .navbar-collapse {
+        transition: left 200ms ease-in-out;
+    }
+    .login-user {
+    	border-top: 1px solid #ececec;
+    	padding-top: 15px;
+    	margin-top: 15px;
+    }
+    .login-user button {
+    	width: 100%;
+    	margin-top: 10px;
+    }
+    .submenu-header {
+    	position: relative;
+    	width: 100%;
+    }
 }
 @media(max-width: 991px) {
 	h3 {
@@ -238,10 +372,6 @@ textarea {
 	.testimonial-content {
 		margin-left: 0;
 	}
-	
-	/*.banner_section {
-	    padding-top: 50px;
-	}*/
 }
 @media(max-width: 767px) {
 	.price-card  {
