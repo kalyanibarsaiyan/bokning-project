@@ -96,7 +96,7 @@ header .nav-link {
 	height: 500px;
 }
 .video_section iframe {
-	border-radius: 5px;
+	border-radius: 15px;
 }
 .whyus_content {
 	display: -webkit-box;
