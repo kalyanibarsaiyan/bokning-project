@@ -126,8 +126,8 @@ header .nav-link {
 	font-size: 20px;
 }
 .carousel-indicators li {
-	width: 18px;
-	height: 18px;
+	width: 14px;
+	height: 14px;
 	border: 1px solid #707070;
 	border-radius: 50%;
 }
