@@ -32,21 +32,23 @@ h1 {
 	font-size: 14px;
 }
 .text-primary {
-	color: #055E37 !important;
 	color: #08C18A !important;
 	color: #943d24 !important;
 	color: #ef9273 !important;
 	color: #05255E !important;
+	color: #055E37 !important;
+
 }
 .text-alternative {
 	color: #186AA5 !important;
 }
 .theme-color {
-	background-color: #055E37;
 	background-color: #08C18A;
 	background-color: #943d24;
 	background-color: #ef9273;
 	background-color: #05255E;
+	background-color: #055E37;
+
 }
 .font-semibold {
 	font-weight: 500;
@@ -323,7 +325,7 @@ textarea {
 	}
 	.dropdown.nav-item:hover .fa-angle-down {
 		transform: rotate(180deg);
-		color: #05255E;
+		color: #055E37;
 	}
 }
 @media (max-width: 990px) {
