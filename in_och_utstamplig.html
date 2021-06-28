@@ -11,7 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header class="px-lg-5 py-2">
+	<header class="position-fixed bg-white shadow-sm w-100 px-lg-5 py-2">
 		<nav class="navbar navbar-expand-lg navbar-light">
 		  <a class="navbar-brand" href="index.html">
 		  	<img src="images/bos-logo1.png" width="120px">
@@ -25,21 +25,21 @@
 		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav mx-md-auto">
 		        <li class="nav-item dropdown mr-0 mr-md-4">
-	              	<a class="nav-link dropdown-toggle text-secondary d-lg-block align-items-center d-flex justify-content-between pt-4 py-lg-2 active" href="product.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" 	aria-expanded="false">
+	              	<a class="nav-link dropdown-toggle text-secondary d-lg-block d-flex justify-content-between pt-4 py-lg-2" href="product.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" 	aria-expanded="false">
 	                	Hur fungerar det?<i class="fa fa-angle-down ml-3"></i>
 	              	</a>
 	              	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		                <div class="row mx-auto">
-			        		<div class="col-md-6 col-12"><a class="dropdown-item text-secondary px-0" href="#"><img src="images/icons/schedule.png" title="img" width="40px" class="mr-4">Schemaläggning</a></div>
-			        		<div class="col-md-6 col-12"><a class="dropdown-item text-secondary px-0" href="#"><img src="images/icons/time-managment.png" title="img" width="40px" class="mr-4">Tidrapportering</a></div>
+		                <div class="d-lg-flex">
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/icons/schedule.png" title="img" width="40px" class="mr-4">Schemaläggning</a></div>
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/icons/time-managment.png" title="img" width="40px" class="mr-4">Tidrapportering</a></div>
 			        	</div>
-			        	<div class="row mx-auto">
-			        		<div class="col-md-6 col-12"><a class="dropdown-item text-secondary px-0" href="#"><img src="images/icons/invoicing.png" title="img" width="40px" class="mr-4">Fakturering</a></div>
-			        		<div class="col-md-6 col-12"><a class="dropdown-item text-secondary px-0" href="#"><img src="images/icons/punch-in-out.png" title="img" width="40px" class="mr-4">In/Utstämpling</a></div>
+			        	<div class="d-lg-flex justify-content-between">
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/icons/invoicing.png" title="img" width="40px" class="mr-4">Fakturering</a></div>
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/icons/punch-in-out.png" title="img" width="40px" class="mr-4">In/Utstämpling</a></div>
 			        	</div>
-			        	<div class="row mx-auto">
-			        		<div class="col-md-6 col-12"><a class="dropdown-item text-secondary px-0" href="#"><img src="images/icons/rut-rot.png" title="img" width="40px" class="mr-4">Rut - ROT</a></div>
-			        		<div class="col-md-6 col-12"><a class="dropdown-item text-secondary px-0" href="#"><img src="images/icons/integration.png" title="img" width="40px" class="mr-4">Integration</a></div>
+			        	<div class="d-lg-flex justify-content-between">
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/icons/rut-rot.png" title="img" width="40px" class="mr-4">Rut - ROT</a></div>
+			        		<div><a class="dropdown-item text-secondary" href="#"><img src="images/icons/integration.png" title="img" width="40px" class="mr-4">Integration</a></div>
 			        	</div>
 	              	</div>
 		        </li>
@@ -61,9 +61,9 @@
 		<div class="banner_section pb-5 text-center">
 			<div class="row mx-0">
 				<div class="col-md-10 col-12 mx-auto py-5">
-					<h2 class="font-weight-bold text-uppercase text-primary">Schemaläggning</h2>
+					<h2 class="font-weight-bold text-uppercase text-primary">In / utstämpling</h2>
 					<p class="w-75 mx-auto text-secondary lh-1">
-                        Skapa engångs eller återkommande uppdrag. Välj mellan fyra olika olika schemavyer.
+                       Anställda kan stämpla in och ut för varje uppdrag eller början eller slutet på ett arbetspass.
                     </p>
 				</div>
 			</div>
@@ -78,8 +78,8 @@
 		<div class="container">
 			<div class="row py-5 mb-5">
 				<div class="col-md-6 col-12 d-flex align-items-start flex-column justify-content-center">
-					<h4 class="font-weight-bold mb-4 text-primary">Create one-time or recurring booking</h4>
-					<p>Add one-time booking or recurring booking. Select one or more employees on a booking. Drag anywhere in the calendar to assign bookings to employees.</p>
+					<h4 class="font-weight-bold mb-4 text-primary">Skapa engångs eller återkommande uppdrag</h4>
+					<p>Skapa bokningar för med upp till 8 veckors interval d.v.s. varje, varannan osv. Lägg till en eller flera anställda på uppdrag.</p>
 				</div>
 				<div class="col-md-6 col-12">
 					<div class="product_img">
@@ -94,14 +94,14 @@
 					</div>
 				</div>
 				<div class="col-md-6 col-12 d-flex align-items-start flex-column justify-content-center">
-					<h4 class="font-weight-bold mb-4 text-primary">Time reporting / Stamping</h4>
-					<p>Keep track of employees' times, in and stamps and take out salary reports.</p>
+					<h4 class="font-weight-bold mb-4 text-primary">Ändringar / Uppdateringar</h4>
+					<p>Ändra/uppdatera dag, anställd eller annat i enstaka uppdrag utan att det påverkar övriga uppdrag.</p>
 				</div>
 			</div>
 			<div class="row py-5 mb-5">
 				<div class="col-md-6 col-12 d-flex align-items-start flex-column justify-content-center">
-					<h4 class="font-weight-bold mb-4 text-primary">Create Invoices</h4>
-					<p>Connect the program with fortnox. Create an invoice or collect all recurring bookings in one invoice.</p>
+					<h4 class="font-weight-bold mb-4 text-primary">Pris / checklistor</h4>
+					<p>Lägg till pris och checklistor i ett uppdrag. När uppdrag är slutförd kan anställda bocka i checklistor.</p>
 				</div>
 				<div class="col-md-6 col-12">
 					<div class="product_img">
@@ -113,31 +113,25 @@
 	</section>
 	<section>
 		<div class="more_products container pb-5">
-			<h3 class="mb-5 font-weight-bold text-primary text-center">More Products</h3>
+			<h3 class="mb-5 font-weight-bold text-primary text-center">Mer om</h3>
 			<ul class="links-block--links d-flex flex-row flex-wrap justify-content-center align-items-center pl-0">
 	            
-	            <li class="list-unstyled rounded-pill px-4 py-2 bg-light mb-3 mx-2 d-flex">
-			    	<a class="d-inline-flex justify-content-center font-semibold flex-row align-items-center text-primary" href="#">
-			    		<img src="images/apoinment.png" width="30px" class="mr-2">
-			    		<span>Schedule</span>
-			    	</a>
-			    </li>
 			    <li class="list-unstyled rounded-pill px-4 py-2 bg-light mb-3 mx-2 d-flex">
 			    	<a class="d-inline-flex justify-content-center font-semibold flex-row align-items-center text-primary" href="#">
 			    		<img src="images/timer.png" width="30px" class="mr-2">
-			    		<span>Time Management</span>
+			    		<span>Tidrapportering</span>
 			    	</a>
 			    </li>
 			    <li class="list-unstyled rounded-pill px-4 py-2 bg-light mb-3 mx-2 d-flex">
 			    	<a class="d-inline-flex justify-content-center font-semibold flex-row align-items-center text-primary" href="#">
 			    		<img src="images/invoice.png" width="30px" class="mr-2">
-			    		<span>Invoicing</span>
+			    		<span>Fakturering</span>
 			    	</a>
 			    </li>
 			    <li class="list-unstyled rounded-pill px-4 py-2 bg-light mb-3 mx-2 d-flex">
 			    	<a class="d-inline-flex justify-content-center font-semibold flex-row align-items-center text-primary" href="#">
 			    		<img src="images/in-out.png" width="30px" class="mr-2">
-			    		<span>Punch IN/OUT</span>
+			    		<span>In/Utstämpling</span>
 			    	</a>
 			    </li>
 			</ul>
@@ -145,13 +139,13 @@
 			    <li class="list-unstyled rounded-pill px-4 py-2 bg-light mb-3 mx-2 d-flex">
 			    	<a class="d-inline-flex justify-content-center font-semibold flex-row align-items-center text-primary" href="#">
 			    		<img src="images/login-customer.png" width="30px" class="mr-2">
-			    		<span>Customer Login</span>
+			    		<span>RUT-ROT</span>
 			    	</a>
 			    </li>
 			    <li class="list-unstyled rounded-pill px-4 py-2 bg-light mb-3 mx-2 d-flex">
 			    	<a class="d-inline-flex justify-content-center font-semibold flex-row align-items-center text-primary" href="#">
 			    		<img src="images/report.png" width="30px" class="mr-2">
-			    		<span>Reports</span>
+			    		<span>Integration</span>
 			    	</a>
 			    </li>
 
@@ -161,17 +155,17 @@
 	</section>
 	<section class="py-5 mb-4">
 		<div class="container text-center py-5 bg-light shadow-sm br-10">
-			<h3 class="mb-5 font-weight-bold text-primary text-center">Create Account</h3>
-			<h5 class="mb-5 w-75 mx-auto">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</h5>
-			<button onclick="location.href='https://app3.bokningoschema.se/#/register'" type="button" class="btn btn-default text-capitalize shadow mr-3 bg-white text-primary py-2 px-4 font-weight-bold mb-3 mb-md-0 rounded-pill">create free account</button>
+			<h3 class="mb-5 font-weight-bold text-primary text-center">Skapa ett test konto</h3>
+			<h5 class="mb-5 w-75 mx-auto">Programmet är helt gratis att testa upp till 14 dagar.</h5>
+			<button onclick="location.href='https://app3.bokningoschema.se/#/register'" type="button" class="btn btn-default text-capitalize shadow mr-3 bg-white text-primary py-2 px-4 font-weight-bold mb-3 mb-md-0 rounded-pill">Testa gratis</button>
 		</div>
 	</section>
-	<footer class="px-lg-5 py-5 position-relative theme-color text-white">
+	<footer class="p-md-5 position-relative theme-color text-white">
 		<div class="row mx-0 py-lg-5 py-3">
-			<div class="col-md-3 col-12 text-left mb-5 mb-md-0 d-flex align-items-start justify-content-start flex-column ">
+			<div class="col-md-3 col-12 text-center mb-5 mb-md-0 d-flex align-items-center justify-content-between flex-column">
 				<a href="javascript:void(0)" title="logo">
-					<img src="images/footer-logo.png" class="footer-logo">
-					<ul class="pl-0 list-unstyled mb-0 text-left py-4 px-3 px-md-0">
+					<img src="images/footer-logo.png" width="50%">
+					<ul class="pl-0 list-unstyled mb-0 text-md-left text-center py-4">
 						<li>
 							<a href="privacy_policy.html" title="terms" class="text-white">Terms of use for mobile</a>
 						</li>
@@ -180,11 +174,11 @@
 						</li>
 					</ul>
 				</a>
-				<div class="text-left mb-3 mb-lg-0 w-100 pl-3 pl-md-0">
+				<div class="col-md-6 col-12 text-md-left text-center mb-3 mb-lg-0">
 					Bird Vision AB © 2020
 				</div>
-				<div class="text-left w-100 pl-3 pl-md-0">
-					<div class="social-links d-flex align-items-start  justify-content-start">
+				<div class="col-md-6 col-12 text-md-left text-center">
+					<div class="social-links d-flex align-items-center justify-content-md-start justify-content-center">
 						<a href="#" title="facebook">
 							<i class="fa fa-facebook-square text-white mr-2" aria-hidden="true"></i>
 						</a>
@@ -199,7 +193,7 @@
 			</div>
 			<div class="col-md-9 col-12">
 				<div class="row mx-0">
-					<div class="col-md-3 col-12 text-left mb-4 mb-md-0">
+					<div class="col-md-3 col-6 text-center text-md-left mb-4 mb-md-0">
 						<h6 class="font-weight-bold mb-3">All sides</h6>
 						<ul class="pl-0 list-unstyled mb-0">
 							<li class="pb-2">
@@ -209,14 +203,14 @@
 								<a href="product.html" title="product" class="text-white">Product</a>
 							</li>
 							<li class="pb-2">
-								<a href="pricing.html" title="price" class="text-white">Price</a>
+								<a href="pricr.html" title="price" class="text-white">Price</a>
 							</li>
 							<li class="pb-2">
 								<a href="contact.html" title="contact" class="text-white">Contact Us</a>
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-3 col-12 text-left mb-4 mb-md-0">
+					<div class="col-md-3 col-6 text-center text-md-left mb-4 mb-md-0">
 						<h6 class="font-weight-bold mb-3">Resources</h6>
 						<ul class="pl-0 list-unstyled mb-0">
 							<li class="pb-2">
@@ -224,7 +218,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-3 col-12 text-left mb-4 mb-md-0">
+					<div class="col-md-3 col-6 text-center text-md-left mb-4 mb-md-0">
 						<h6 class="font-weight-bold mb-3">App and integration</h6>
 						<ul class="pl-0 list-unstyled mb-0">
 							<li class="pb-2">
@@ -241,7 +235,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="col-md-3 col-12 text-left mb-4 mb-md-0">
+					<div class="col-md-3 col-6 text-center text-md-left mb-4 mb-md-0">
 						<h6 class="font-weight-bold mb-3">Booking & Schedule Online</h6>
 						<p>A scheduling program adapted for service companies.</p>
 					</div>
@@ -252,16 +246,4 @@
 </body>
 <script src="js/jquery-3.5.1.slim.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script>
-	$(window).scroll(function(){
-      if ($(this).scrollTop() > 120) {
-          $('header').addClass('fixed');
-      } else {
-          $('header').removeClass('fixed');
-      }
-	});
-	$(".navbar-toggler").click(function(){
-		$("body").toggleClass("overflow-hidden");
-	});
-</script>
 </html>
